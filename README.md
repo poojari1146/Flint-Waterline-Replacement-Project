@@ -26,25 +26,17 @@ We worked with a dataset of 20,697 records, provided by the Flint Water Crisis t
   - Dropped columns like sl_public_type, which directly revealed the target
 
 📊 Exploratory Data Analysis (EDA)
-Visual Mapping showed clusters of dangerous homes tied to geographic location and build year
+- Visual Mapping showed clusters of dangerous homes tied to geographic location and build year
+- Key Insight: Homes built before 1950 showed a strong correlation with high lead contamination risk
+- Top Features Identified:
+  - SL_Type (Service Line Material)
+  - New_YearBuilt
+  - Zoning
+  - Hydrant Type
+  - Residential Building Style
+  - Land Value, Building Value, Homestead
 
-Key Insight: Homes built before 1950 showed a strong correlation with high lead contamination risk
-
-Top Features Identified:
-
-SL_Type (Service Line Material)
-
-New_YearBuilt
-
-Zoning
-
-Hydrant Type
-
-Residential Building Style
-
-Land Value, Building Value, Homestead
-
-🤖 Predictive Modeling
+🤖 Predictive Modeling<br>
 We applied and compared multiple supervised learning models to predict the binary target Dangerous (1 = lead risk, 0 = safe):
 
 1. Logistic Regression
