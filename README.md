@@ -9,32 +9,21 @@ To build robust predictive models that accurately identify homes likely to have 
 
 🧩 Data Collection & Preprocessing<br>
 We worked with a dataset of 20,697 records, provided by the Flint Water Crisis team. It included:<br>
-Property information (year built, land value, zoning, owner type)
+- Property information (year built, land value, zoning, owner type)
+- Service line test results (public/private)
+- Geographic features (latitude, longitude, wards, zoning)
+- Infrastructure data (hydrant types, building style, homestead status)
 
-Service line test results (public/private)
-
-Geographic features (latitude, longitude, wards, zoning)
-
-Infrastructure data (hydrant types, building style, homestead status)
-
-Key Preprocessing Steps:
-Missing Value Imputation:
-
-Year Built: Imputed using adjacent property IDs and neighborhood average
-
-Building Style, Zoning: Filled based on most common neighborhood values
-
-Feature Engineering:
-
-Combined multiple housing condition variables into one Property Condition variable
-
-Created a new New_YearBuilt column to improve temporal data quality
-
-Variable Reduction:
-
-Removed irrelevant/redundant fields: e.g., pid, latitude, Draft Zone
-
-Dropped columns like sl_public_type, which directly revealed the target
+🔑 Key Preprocessing Steps:<br>
+- Missing Value Imputation:
+  - Year Built: Imputed using adjacent property IDs and neighborhood average
+  - Building Style, Zoning: Filled based on most common neighborhood values
+- Feature Engineering:
+  - Combined multiple housing condition variables into one Property Condition variable
+  - Created a new New_YearBuilt column to improve temporal data quality
+- Variable Reduction:
+  - Removed irrelevant/redundant fields: e.g., pid, latitude, Draft Zone
+  - Dropped columns like sl_public_type, which directly revealed the target
 
 📊 Exploratory Data Analysis (EDA)
 Visual Mapping showed clusters of dangerous homes tied to geographic location and build year
