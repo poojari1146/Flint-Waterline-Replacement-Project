@@ -40,31 +40,31 @@ We worked with a dataset of 20,697 records, provided by the Flint Water Crisis t
 We applied and compared multiple supervised learning models to predict the binary target Dangerous (1 = lead risk, 0 = safe):
 
 1. Logistic Regression
-Accuracy: 91.52%<br>
-R²: 0.6648<br>
-Key predictors: SL_Type, New_YearBuilt, Zoning
+- Accuracy: 91.52%
+- R²: 0.6648
+- Key predictors: SL_Type, New_YearBuilt, Zoning
 
 2. CART (Classification & Regression Trees)
-Accuracy: 92.27%<br>
-R²: 0.662<br>
-Simple and interpretable, used for validation of logistic model
+- Accuracy: 92.27%
+- R²: 0.662
+- Simple and interpretable, used for validation of logistic model
 
 3. Boosted Tree
-Accuracy: 92.56%<br>
-R²: 0.6762<br>
-Powerful ensemble method, improved over CART
+- Accuracy: 92.56%
+- R²: 0.6762
+- Powerful ensemble method, improved over CART
 
 4. Bootstrap Forest ✅ (Best Performer)
-Accuracy: 92.41%<br>
-R²: 0.6842<br>
-Highest ROC AUC: 0.9672<br>
-Most robust to overfitting, handles feature interactions well
+- Accuracy: 92.41%
+- R²: 0.6842
+- Highest ROC AUC: 0.9672
+- Most robust to overfitting, handles feature interactions well
 
 5. Neural Network
-Accuracy: 92.08%<br>
-R²: 0.7859<br>
-Tuned for balance between complexity and performance
+- Accuracy: 92.08%
+- R²: 0.7859
+- Tuned for balance between complexity and performance
 
-🏁 Final Model Selection<br>
+🏁 Final Model Selection <br>
 The Bootstrap Forest model was selected based on the highest AUC and generalization performance. It demonstrated superior ability to classify homes at risk of lead contamination with high confidence.
 
