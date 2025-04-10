@@ -1,12 +1,14 @@
-🚰 Flint Water Line Replacement – Predictive Modeling for Public Health
+🚰 Flint Water Line Replacement – Predictive Modeling for Public Health<br>
 | A data-driven initiative to identify homes at high risk of lead contamination in Flint, Michigan, using advanced machine learning models.
-📘 Overview
+
+📘 Overview<br>
 In the wake of the Flint Water Crisis, thousands of residents were exposed to dangerous levels of lead due to outdated and corroded service lines. Our goal in this project was to predict which homes are most at risk of lead contamination, using property and infrastructure data, so that resources for pipe replacement could be allocated more efficiently.
-🎯 Objective
+
+🎯 Objective<br>
 To build robust predictive models that accurately identify homes likely to have lead-contaminated service lines, thus reducing unnecessary excavation and improving public health outcomes.
 
-🧩 Data Collection & Preprocessing
-We worked with a dataset of 20,697 records, provided by the Flint Water Crisis team. It included:
+🧩 Data Collection & Preprocessing<br>
+We worked with a dataset of 20,697 records, provided by the Flint Water Crisis team. It included:<br>
 Property information (year built, land value, zoning, owner type)
 
 Service line test results (public/private)
